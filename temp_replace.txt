@@ -1,0 +1,1898 @@
+"use client";
+
+import { Button } from "./ui/button";
+import { Checkbox } from "./ui/checkbox";
+import { Input } from "./ui/input";
+import { Label } from "./ui/label";
+import { RadioGroup, RadioGroupItem } from "./ui/radio-group";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "./ui/select";
+import { Textarea } from "./ui/textarea";
+import React from "react";
+import { BiEnvelope, BiMap, BiPhone } from "react-icons/bi";
+
+export function Contact6() {
+  return (
+    <section className="px-[5%] py-16 md:py-24 lg:py-28">
+      <div className="container grid grid-cols-1 items-start gap-y-12 md:grid-flow-row md:grid-cols-2 md:gap-x-12 lg:grid-flow-col lg:gap-x-20 lg:gap-y-16">
+        <div>
+          <div className="mb-6 md:mb-8">
+            <p className="mb-3 font-semibold md:mb-4">Iterate</p>
+            <h2 className="heading-h2 mb-5 font-bold md:mb-6">Contact me</h2>
+            <p className="text-medium">
+              Share your project details and I'll respond quickly.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-4 py-2">
+            <div className="flex items-center gap-4">
+              <BiEnvelope className="size-6 flex-none" />
+              <p>hello@relume.io</p>
+            </div>
+            <div className="flex items-center gap-4">
+              <BiPhone className="size-6 flex-none" />
+              <p>+1 (555) 000-0000</p>
+            </div>
+            <div className="flex items-center gap-4">
+              <BiMap className="size-6 flex-none" />
+              <p>123 Sample St, Sydney NSW 2000 AU</p>
+            </div>
+          </div>
+        </div>
+        <form className="grid max-w-lg grid-cols-1 grid-rows-[auto_auto] gap-6">
+          <div className="grid grid-cols-2 gap-6">
+            <div className="grid w-full items-center">
+              <Label htmlFor="firstName" className="mb-2">
+                First name
+              </Label>
+              <Input type="text" id="firstName" />
+            </div>
+            <div className="grid w-full items-center">
+              <Label htmlFor="lastName" className="mb-2">
+                Last name
+              </Label>
+              <Input type="text" id="lastName" />
+            </div>
+          </div>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div className="grid w-full items-center">
+              <Label htmlFor="email" className="mb-2">
+                Email
+              </Label>
+              <Input type="email" id="email" />
+            </div>
+            <div className="grid w-full items-center">
+              <Label htmlFor="phone" className="mb-2">
+                Phone number
+              </Label>
+              <Input type="text" id="phone" />
+            </div>
+          </div>
+          <div className="grid w-full items-center">
+            <Label className="mb-2">Project type</Label>
+            <Select>
+              <SelectTrigger>
+                <SelectValue placeholder="Select one..." />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="first-choice">First Choice</SelectItem>
+                <SelectItem value="second-choice">Second Choice</SelectItem>
+                <SelectItem value="third-choice">Third Choice</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+          <div className="grid w-full items-center py-3 md:py-4">
+            <Label className="mb-3 md:mb-4">Who are you?</Label>
+            <RadioGroup className="grid grid-cols-2 gap-x-6 gap-y-3.5">
+              <div className="flex items-center space-x-2">
+                <RadioGroupItem value="Startup" id="#first_choice" />
+                <Label htmlFor="#first_choice">Startup</Label>
+              </div>
+              <div className="flex items-center space-x-2">
+                <RadioGroupItem value="First choice" id="#second_choice" />
+                <Label htmlFor="#second_choice">Enterprise</Label>
+              </div>
+              <div className="flex items-center space-x-2">
+                <RadioGroupItem value="First choice" id="#third_choice" />
+                <Label htmlFor="#third_choice">Freelancer</Label>
+              </div>
+              <div className="flex items-center space-x-2">
+                <RadioGroupItem value="First choice" id="#fourth_choice" />
+                <Label htmlFor="#fourth_choice">Student</Label>
+              </div>
+              <div className="flex items-center space-x-2">
+                <RadioGroupItem value="First choice" id="#fifth_choice" />
+                <Label htmlFor="#fifth_choice">Agency</Label>
+              </div>
+              <div className="flex items-center space-x-2">
+                <RadioGroupItem value="First choice" id="#other" />
+                <Label htmlFor="#other">Other</Label>
+              </div>
+            </RadioGroup>
+          </div>
+          <div className="grid w-full items-center">
+            <Label htmlFor="message" className="mb-2">
+              Message
+            </Label>
+            <Textarea
+              id="message"
+              placeholder="Describe your project..."
+              className="min-h-[11.25rem] overflow-auto"
+            />
+          </div>
+          <div className="text-small mb-3 flex items-center space-x-2 md:mb-4">
+            <Checkbox id="terms" />
+            <Label htmlFor="terms" className="cursor-pointer">
+              I accept the terms
+            </Label>
+          </div>
+          <div>
+            <Button title="Send">Send</Button>
+          </div>
+        </form>
+      </div>
+    </section>
+  );
+}
+"use client";
+
+import React from "react";
+import { BiEnvelope, BiMap, BiPhone } from "react-icons/bi";
+
+export function Contact15() {
+  return (
+    <section className="px-[5%] py-16 md:py-24 lg:py-28">
+      <div className="container">
+        <div>
+          <div className="mb-12 grid auto-cols-fr grid-cols-1 gap-x-12 gap-y-12 md:mb-20 md:grid-cols-[1fr_.75fr] md:gap-x-20 md:gap-y-16">
+            <div className="max-w-lg">
+              <p className="mb-3 font-semibold md:mb-4">Build</p>
+              <h2 className="heading-h2 mb-5 font-bold md:mb-6">
+                Get in touch
+              </h2>
+              <p className="text-medium">
+                Connect with me to discuss software solutions that can transform
+                your ideas into reality.
+              </p>
+            </div>
+            <div className="flex flex-col">
+              <div className="grid auto-cols-fr grid-cols-1 gap-x-4 gap-y-6 py-2">
+                <div className="flex flex-row">
+                  <div className="mr-4 md:mb-4">
+                    <BiEnvelope className="size-6" />
+                  </div>
+                  <div>
+                    <h3 className="heading-h6 mb-2 font-bold">Email</h3>
+                    <a className="underline" href="#">
+                      hello@relume.io
+                    </a>
+                  </div>
+                </div>
+                <div className="flex flex-row">
+                  <div className="mr-4 md:mb-4">
+                    <BiPhone className="size-6" />
+                  </div>
+                  <div>
+                    <h3 className="heading-h6 mb-2 font-bold">Phone</h3>
+                    <a className="underline" href="#">
+                      (647) 809-3271
+                    </a>
+                  </div>
+                </div>
+                <div className="flex flex-row">
+                  <div className="mr-4 md:mb-4">
+                    <BiMap className="size-6" />
+                  </div>
+                  <div>
+                    <h3 className="heading-h6 mb-2 font-bold">Location</h3>
+                    <p>Toronto, Ontario, Canada</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+            className="w-full rounded-image object-cover"
+            alt="Relume placeholder image"
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+"use client";
+
+import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog";
+import { VideoIframe } from "./ui/video-iframe";
+import React from "react";
+import { FaCirclePlay } from "react-icons/fa6";
+
+export function Content3() {
+  return (
+    <section className="px-[5%] py-16 md:py-24 lg:py-28">
+      <div className="container">
+        <div className="grid grid-cols-1 items-start gap-y-12 md:grid-cols-2 md:gap-x-12 lg:gap-x-20">
+          <div>
+            <h2 className="heading-h2 mb-5 font-bold md:mb-6">
+              Project development approach
+            </h2>
+            <div className="prose-base prose-p:m-0 prose-p:mb-4 prose-p:leading-[1.5]">
+              <div>
+                <p>
+                  Morbi sed imperdiet in ipsum, adipiscing elit dui lectus.
+                  Tellus id scelerisque est ultricies ultricies. Duis est sit
+                  sed leo nisl, blandit elit sagittis. Quisque tristique
+                  consequat quam sed. Nisl at scelerisque amet nulla purus
+                  habitasse.
+                </p>
+                <p>
+                  Nunc sed faucibus bibendum feugiat sed interdum. Ipsum egestas
+                  condimentum mi massa. In tincidunt pharetra consectetur sed
+                  duis facilisis metus. Etiam egestas in nec sed et. Quis
+                  lobortis at sit dictum eget nibh tortor commodo cursus.
+                </p>
+                <p>
+                  Odio felis sagittis, morbi feugiat tortor vitae feugiat fusce
+                  aliquet. Nam elementum urna nisi aliquet erat dolor enim.
+                  Ornare id morbi eget ipsum. Aliquam senectus neque ut id eget
+                  consectetur dictum. Donec posuere pharetra odio consequat
+                  scelerisque et, nunc tortor. Nulla adipiscing erat a erat.
+                  Condimentum lorem posuere gravida enim posuere cursus diam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <Dialog>
+              <DialogTrigger className="relative flex w-full items-center justify-center overflow-hidden rounded-image">
+                <img
+                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-video-thumbnail.svg"
+                  alt="Relume placeholder image"
+                  className="size-full object-cover"
+                />
+                <span className="absolute inset-0 z-10 bg-neutral-darkest/50" />
+                <FaCirclePlay className="absolute z-20 size-16 text-white" />
+              </DialogTrigger>
+              <DialogContent>
+                <VideoIframe video="https://www.youtube.com/embed/8DKLYsikxTs?si=Ch9W0KrDWWUiCMMW" />
+              </DialogContent>
+            </Dialog>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+"use client";
+
+import { Button } from "./ui/button";
+import React from "react";
+
+export function Cta25() {
+  return (
+    <section className="px-[5%] py-16 md:py-24 lg:py-28">
+      <div className="container max-w-lg text-center">
+        <h2 className="heading-h2 mb-5 font-bold md:mb-6">
+          Let's build something great
+        </h2>
+        <p className="text-medium">
+          Ready to turn your digital vision into reality? Connect with me to
+          start your project.
+        </p>
+        <div className="mt-6 flex items-center justify-center gap-4 md:mt-8">
+          <Button title="Get started">Get started</Button>
+          <Button title="Contact me" variant="secondary">
+            Contact me
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
+"use client";
+
+import { Button } from "./ui/button";
+import React from "react";
+
+export function Cta25_1() {
+  return (
+    <section className="px-[5%] py-16 md:py-24 lg:py-28">
+      <div className="container max-w-lg text-center">
+        <h2 className="heading-h2 mb-5 font-bold md:mb-6">Let's connect</h2>
+        <p className="text-medium">
+          Interested in collaboration or have a project in mind? Reach out
+          anytime.
+        </p>
+        <div className="mt-6 flex items-center justify-center gap-4 md:mt-8">
+          <Button title="Email">Email</Button>
+          <Button title="Call" variant="secondary">
+            Call
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
+"use client";
+
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./ui/accordion";
+import { Button } from "./ui/button";
+import React from "react";
+
+export function Faq3() {
+  return (
+    <section className="px-[5%] py-16 md:py-24 lg:py-28">
+      <div className="container grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-12 lg:grid-cols-[.75fr,1fr] lg:gap-x-20">
+        <div>
+          <h2 className="heading-h2 mb-5 font-bold md:mb-6">FAQs</h2>
+          <p className="text-medium">
+            Common questions about working together and my development approach.
+          </p>
+          <div className="mt-6 md:mt-8">
+            <Button title="Contact" variant="secondary">
+              Contact
+            </Button>
+          </div>
+        </div>
+        <Accordion type="multiple">
+          <AccordionItem value="item-0">
+            <AccordionTrigger className="text-medium md:py-5">
+              What technologies do you use?
+            </AccordionTrigger>
+            <AccordionContent className="md:pb-6">
+              I specialize in React, TypeScript, Supabase, and Three.js. My tech
+              stack is modern and flexible, designed to solve complex problems
+              efficiently.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-1">
+            <AccordionTrigger className="text-medium md:py-5">
+              How long are project timelines?
+            </AccordionTrigger>
+            <AccordionContent className="md:pb-6">
+              Timelines vary based on project complexity. Typically, small
+              projects take 2-4 weeks, while larger initiatives can range from
+              2-6 months.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-2">
+            <AccordionTrigger className="text-medium md:py-5">
+              Do you offer consulting?
+            </AccordionTrigger>
+            <AccordionContent className="md:pb-6">
+              Yes, I provide technical consulting for startups and businesses
+              looking to optimize their software development strategies.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-3">
+            <AccordionTrigger className="text-medium md:py-5">
+              What are your rates?
+            </AccordionTrigger>
+            <AccordionContent className="md:pb-6">
+              Rates depend on project scope and complexity. I offer competitive
+              pricing and can discuss custom packages during our initial
+              consultation.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-4">
+            <AccordionTrigger className="text-medium md:py-5">
+              Can you work remotely?
+            </AccordionTrigger>
+            <AccordionContent className="md:pb-6">
+              Absolutely. I'm experienced in remote collaboration and can
+              integrate seamlessly with your team using modern communication
+              tools.
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+      </div>
+    </section>
+  );
+}
+"use client";
+
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+import React, { useState } from "react";
+import {
+  BiLogoFacebookCircle,
+  BiLogoInstagram,
+  BiLogoLinkedinSquare,
+  BiLogoYoutube,
+} from "react-icons/bi";
+import { FaXTwitter } from "react-icons/fa6";
+
+const useForm = () => {
+  const [email, setEmail] = useState("");
+  const handleSetEmail = (event) => {
+    setEmail(event.target.value);
+  };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log({ email });
+  };
+  return {
+    email,
+    handleSetEmail,
+    handleSubmit,
+  };
+};
+
+export function Footer1() {
+  const formState = useForm();
+  return (
+    <footer className="px-[5%] py-12 md:py-18 lg:py-20">
+      <div className="container">
+        <div className="grid grid-cols-1 gap-x-[8vw] gap-y-12 pb-12 md:gap-y-16 md:pb-18 lg:grid-cols-[0.75fr_1fr] lg:gap-y-4 lg:pb-20">
+          <div className="flex flex-col">
+            <a href="#" className="mb-5 md:mb-6">
+              <img
+                src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
+                alt="Logo image"
+                className="inline-block"
+              />
+            </a>
+            <p className="mb-5 md:mb-6">
+              Stay updated with the latest technology insights and project
+              updates.
+            </p>
+            <div className="w-full max-w-md">
+              <form
+                className="mb-3 grid grid-cols-1 gap-x-4 gap-y-3 sm:grid-cols-[1fr_max-content] md:gap-y-4"
+                onSubmit={formState.handleSubmit}
+              >
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="Email address"
+                  value={formState.email}
+                  onChange={formState.handleSetEmail}
+                />
+                <Button title="Subscribe" variant="secondary" size="sm">
+                  Subscribe
+                </Button>
+              </form>
+              <p className="text-tiny">
+                By subscribing, you agree to our privacy policy and
+                communication terms.
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 items-start gap-y-10 sm:grid-cols-3 sm:gap-x-6 md:gap-x-8 md:gap-y-4">
+            <div className="flex flex-col items-start justify-start">
+              <h2 className="mb-3 font-semibold md:mb-4">Quick links</h2>
+              <ul>
+                <li className="text-small py-2">
+                  <a href="#" className="flex items-center gap-3">
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li className="text-small py-2">
+                  <a href="#" className="flex items-center gap-3">
+                    <span>About</span>
+                  </a>
+                </li>
+                <li className="text-small py-2">
+                  <a href="#" className="flex items-center gap-3">
+                    <span>Projects</span>
+                  </a>
+                </li>
+                <li className="text-small py-2">
+                  <a href="#" className="flex items-center gap-3">
+                    <span>Contact</span>
+                  </a>
+                </li>
+                <li className="text-small py-2">
+                  <a href="#" className="flex items-center gap-3">
+                    <span>Blog</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="flex flex-col items-start justify-start">
+              <h2 className="mb-3 font-semibold md:mb-4">Resources</h2>
+              <ul>
+                <li className="text-small py-2">
+                  <a href="#" className="flex items-center gap-3">
+                    <span>Tutorials</span>
+                  </a>
+                </li>
+                <li className="text-small py-2">
+                  <a href="#" className="flex items-center gap-3">
+                    <span>Guides</span>
+                  </a>
+                </li>
+                <li className="text-small py-2">
+                  <a href="#" className="flex items-center gap-3">
+                    <span>Case studies</span>
+                  </a>
+                </li>
+                <li className="text-small py-2">
+                  <a href="#" className="flex items-center gap-3">
+                    <span>Webinars</span>
+                  </a>
+                </li>
+                <li className="text-small py-2">
+                  <a href="#" className="flex items-center gap-3">
+                    <span>Follow us</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="flex flex-col items-start justify-start">
+              <h2 className="mb-3 font-semibold md:mb-4">Facebook</h2>
+              <ul className="flex flex-col items-start">
+                <li className="text-small py-2">
+                  <a href="#" className="flex items-center gap-3">
+                    <BiLogoFacebookCircle className="size-6" />
+                    <span>Instagram</span>
+                  </a>
+                </li>
+                <li className="text-small py-2">
+                  <a href="#" className="flex items-center gap-3">
+                    <BiLogoInstagram className="size-6" />
+                    <span>X</span>
+                  </a>
+                </li>
+                <li className="text-small py-2">
+                  <a href="#" className="flex items-center gap-3">
+                    <FaXTwitter className="size-6 p-0.5" />
+                    <span>LinkedIn</span>
+                  </a>
+                </li>
+                <li className="text-small py-2">
+                  <a href="#" className="flex items-center gap-3">
+                    <BiLogoLinkedinSquare className="size-6" />
+                    <span>YouTube</span>
+                  </a>
+                </li>
+                <li className="text-small py-2">
+                  <a href="#" className="flex items-center gap-3">
+                    <BiLogoYoutube className="size-6" />
+                    <span>© 2024 Milyon Kifleyesus. All rights reserved.</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="h-px w-full bg-scheme-border" />
+        <div className="text-small flex flex-col-reverse items-start justify-between pt-6 pb-4 md:flex-row md:items-center md:pt-8 md:pb-0">
+          <p className="mt-6 md:mt-0">© 2024 Relume. All rights reserved.</p>
+          <ul className="text-small grid grid-flow-row grid-cols-[max-content] justify-center gap-y-4 md:grid-flow-col md:gap-x-6 md:gap-y-0">
+            <li className="underline">
+              <a href="#">Terms of service</a>
+            </li>
+            <li className="underline">
+              <a href="#">Cookies settings</a>
+            </li>
+            <li className="underline">
+              <a href="#">Cookies Settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  );
+}
+"use client";
+
+import { Button } from "./ui/button";
+import React from "react";
+
+export function Header114() {
+  return (
+    <section className="relative px-[5%]">
+      <div className="container flex max-h-[60rem] min-h-svh">
+        <div className="py-16 md:py-24 lg:py-28">
+          <div className="relative z-10 grid h-full auto-cols-fr grid-cols-1 gap-12 md:grid-cols-2 md:gap-20">
+            <div className="flex flex-col justify-start md:justify-center">
+              <h1 className="heading-h1 font-bold text-white">
+                Code that transforms ideas into reality
+              </h1>
+              <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
+                <Button title="Projects">Projects</Button>
+                <Button title="Contact" variant="secondary-alt">
+                  Contact
+                </Button>
+              </div>
+            </div>
+            <div className="mx-[7.5%] flex flex-col justify-end">
+              <p className="text-medium text-white">
+                Software engineering driven by precision and passion. Every line
+                of code tells a story of innovation and problem-solving.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+          className="size-full object-cover"
+          alt="Relume placeholder image"
+        />
+        <div className="absolute inset-0 bg-neutral-darkest/50" />
+      </div>
+    </section>
+  );
+}
+"use client";
+
+import { Button } from "./ui/button";
+import React from "react";
+
+export function Header30() {
+  return (
+    <section className="relative px-[5%]">
+      <div className="relative z-10 container">
+        <div className="flex max-h-[60rem] min-h-svh items-center justify-center py-16 text-center md:py-24 lg:py-28">
+          <div className="w-full max-w-lg">
+            <h1 className="heading-h1 mb-5 font-bold text-white md:mb-6">
+              Crafting digital solutions that work
+            </h1>
+            <p className="text-medium text-white">
+              Transforming ideas into powerful web and mobile experiences with
+              precision and creativity.
+            </p>
+            <div className="mt-6 flex items-center justify-center gap-x-4 md:mt-8">
+              <Button title="Services">Services</Button>
+              <Button title="Contact" variant="secondary-alt">
+                Contact
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+          className="size-full object-cover"
+          alt="Relume placeholder image"
+        />
+        <div className="absolute inset-0 bg-neutral-darkest/50" />
+      </div>
+    </section>
+  );
+}
+"use client";
+
+import React from "react";
+
+export function Header64() {
+  return (
+    <section className="px-[5%] py-16 md:py-24 lg:py-28">
+      <div className="container max-w-lg text-center">
+        <h1 className="heading-h1 mb-5 font-bold md:mb-6">
+          Digital craft and innovation
+        </h1>
+        <p className="text-medium">
+          Delivering cutting-edge technology solutions that drive business
+          growth and user engagement.
+        </p>
+      </div>
+    </section>
+  );
+}
+"use client";
+
+import { Button } from "./ui/button";
+import React from "react";
+import { RxChevronRight } from "react-icons/rx";
+
+export function Layout16() {
+  return (
+    <section className="px-[5%] py-16 md:py-24 lg:py-28">
+      <div className="container">
+        <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
+          <div>
+            <p className="mb-3 font-semibold md:mb-4">About</p>
+            <h1 className="heading-h2 mb-5 font-bold md:mb-6">
+              Software engineer shaping digital landscapes
+            </h1>
+            <p className="text-medium mb-5 md:mb-6">
+              Passionate technologist committed to building innovative solutions
+              that bridge creativity and technical excellence.
+            </p>
+            <ul className="grid grid-cols-1 gap-4 py-2">
+              <li className="flex self-start">
+                <div className="mr-4 flex-none self-start">
+                  <img
+                    src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                    alt="Relume logo 1"
+                    className="size-6"
+                  />
+                </div>
+                <span>Software engineering student</span>
+              </li>
+              <li className="flex self-start">
+                <div className="mr-4 flex-none self-start">
+                  <img
+                    src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                    alt="Relume logo 1"
+                    className="size-6"
+                  />
+                </div>
+                <span>Centennial College, advancing technical skills</span>
+              </li>
+              <li className="flex self-start">
+                <div className="mr-4 flex-none self-start">
+                  <img
+                    src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                    alt="Relume logo 1"
+                    className="size-6"
+                  />
+                </div>
+                <span>Continuous learning and growth</span>
+              </li>
+            </ul>
+            <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
+              <Button title="Explore" variant="secondary">
+                Explore
+              </Button>
+              <Button
+                title="Resume"
+                variant="link"
+                size="link"
+                iconRight={<RxChevronRight />}
+              >
+                Resume
+              </Button>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+              className="w-full rounded-image object-cover"
+              alt="Relume placeholder image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+"use client";
+
+import { Button } from "./ui/button";
+import React from "react";
+import { RxChevronRight } from "react-icons/rx";
+
+export function Layout239() {
+  return (
+    <section className="px-[5%] py-16 md:py-24 lg:py-28">
+      <div className="container">
+        <div className="flex flex-col items-center">
+          <div className="mb-12 text-center md:mb-18 lg:mb-20">
+            <div className="w-full max-w-lg">
+              <p className="mb-3 font-semibold md:mb-4">Build</p>
+              <h2 className="heading-h2 mb-5 font-bold md:mb-6">
+                Comprehensive digital solutions for modern businesses
+              </h2>
+              <p className="text-medium">
+                Each service is designed to transform your digital landscape
+                with precision and expertise.
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 items-start justify-center gap-y-12 md:grid-cols-3 md:gap-x-8 md:gap-y-16 lg:gap-x-12">
+            <div className="flex w-full flex-col items-center text-center">
+              <div className="mb-6 md:mb-8">
+                <img
+                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+                  alt="Relume placeholder image"
+                  className="rounded-image"
+                />
+              </div>
+              <h3 className="heading-h4 mb-5 font-bold md:mb-6">
+                Web development that scales
+              </h3>
+              <p>Creating responsive and robust web applications.</p>
+            </div>
+            <div className="flex w-full flex-col items-center text-center">
+              <div className="mb-6 md:mb-8">
+                <img
+                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+                  alt="Relume placeholder image"
+                  className="rounded-image"
+                />
+              </div>
+              <h3 className="heading-h4 mb-5 font-bold md:mb-6">
+                Mobile app development for every platform
+              </h3>
+              <p>
+                Designing intuitive mobile experiences across iOS and Android.
+              </p>
+            </div>
+            <div className="flex w-full flex-col items-center text-center">
+              <div className="mb-6 md:mb-8">
+                <img
+                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+                  alt="Relume placeholder image"
+                  className="rounded-image"
+                />
+              </div>
+              <h3 className="heading-h4 mb-5 font-bold md:mb-6">
+                UI/UX design that connects
+              </h3>
+              <p>
+                Crafting user interfaces that are both beautiful and functional.
+              </p>
+            </div>
+          </div>
+          <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
+            <Button variant="secondary">Learn more</Button>
+            <Button iconRight={<RxChevronRight />} variant="link" size="link">
+              Projects
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+"use client";
+
+import { Button } from "./ui/button";
+import React from "react";
+import { RxChevronRight } from "react-icons/rx";
+
+export function Layout25() {
+  return (
+    <section className="px-[5%] py-16 md:py-24 lg:py-28">
+      <div className="container">
+        <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
+          <div>
+            <p className="mb-3 font-semibold md:mb-4">Build</p>
+            <h2 className="heading-h2 mb-5 font-bold md:mb-6">
+              Software engineering journey and skills
+            </h2>
+            <p className="text-medium mb-6 md:mb-8">
+              Dedicated to transforming complex problems into simple, effective
+              solutions through technology.
+            </p>
+            <div className="grid grid-cols-1 gap-6 py-2 sm:grid-cols-2">
+              <div>
+                <h3 className="heading-h2 mb-2 font-bold">50%</h3>
+                <p>Software engineering student at Centennial College</p>
+              </div>
+              <div>
+                <h3 className="heading-h2 mb-2 font-bold">50%</h3>
+                <p>Passionate about creating innovative digital experiences</p>
+              </div>
+            </div>
+            <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
+              <Button title="Resume" variant="secondary">
+                Resume
+              </Button>
+              <Button
+                title="LinkedIn"
+                variant="link"
+                size="link"
+                iconRight={<RxChevronRight />}
+              >
+                LinkedIn
+              </Button>
+            </div>
+          </div>
+          <img
+            src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+            className="w-full rounded-image object-cover"
+            alt="Relume placeholder image"
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+"use client";
+
+import { Button } from "./ui/button";
+import React from "react";
+import { RxChevronRight } from "react-icons/rx";
+
+export function Layout420() {
+  return (
+    <section className="pt-24 md:pt-0">
+      <div className="grid grid-cols-1 gap-y-16 md:grid-cols-2 md:gap-y-0">
+        <div>
+          <div className="md:sticky md:top-0 md:gap-y-0">
+            <div className="flex flex-col items-end md:h-screen md:justify-center">
+              <div className="mx-[5%] max-w-md md:mr-12 md:ml-[5vw] lg:mr-20">
+                <p className="mb-3 font-semibold md:mb-4">Toolkit</p>
+                <h2 className="heading-h2 mb-5 font-bold md:mb-6">
+                  Technologies that power innovative solutions
+                </h2>
+                <p className="text-medium">
+                  A robust set of tools and technologies that enable creating
+                  powerful, scalable digital experiences.
+                </p>
+                <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
+                  <Button title="Skills" variant="secondary">
+                    Skills
+                  </Button>
+                  <Button
+                    title="Learn more"
+                    variant="link"
+                    size="link"
+                    iconRight={<RxChevronRight />}
+                  >
+                    Learn more
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="sticky top-0 flex h-screen flex-col justify-center p-10">
+            <div className="max-w-md text-white">
+              <h3 className="heading-h5 mb-3 font-bold md:mb-4">
+                Frontend development
+              </h3>
+              <p>
+                Expertise in creating responsive, performant web interfaces
+                using modern JavaScript frameworks.
+              </p>
+            </div>
+            <div className="absolute inset-0 -z-10">
+              <img
+                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-1.svg"
+                className="size-full object-cover"
+                alt="Relume placeholder image 1"
+              />
+              <div className="absolute inset-0 bg-neutral-darkest/50" />
+            </div>
+          </div>
+          <div className="sticky top-0 flex h-screen flex-col justify-center p-10">
+            <div className="max-w-md text-white">
+              <h3 className="heading-h5 mb-3 font-bold md:mb-4">
+                Frontend development
+              </h3>
+              <p>
+                Expertise in creating responsive, performant web interfaces
+                using modern JavaScript frameworks.
+              </p>
+            </div>
+            <div className="absolute inset-0 -z-10">
+              <img
+                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-2.svg"
+                className="size-full object-cover"
+                alt="Relume placeholder image 2"
+              />
+              <div className="absolute inset-0 bg-neutral-darkest/50" />
+            </div>
+          </div>
+          <div className="sticky top-0 flex h-screen flex-col justify-center p-10">
+            <div className="max-w-md text-white">
+              <h3 className="heading-h5 mb-3 font-bold md:mb-4">
+                Frontend development
+              </h3>
+              <p>
+                Expertise in creating responsive, performant web interfaces
+                using modern JavaScript frameworks.
+              </p>
+            </div>
+            <div className="absolute inset-0 -z-10">
+              <img
+                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-3.svg"
+                className="size-full object-cover"
+                alt="Relume placeholder image 3"
+              />
+              <div className="absolute inset-0 bg-neutral-darkest/50" />
+            </div>
+          </div>
+          <div className="sticky top-0 flex h-screen flex-col justify-center p-10">
+            <div className="max-w-md text-white">
+              <h3 className="heading-h5 mb-3 font-bold md:mb-4">
+                Frontend development
+              </h3>
+              <p>
+                Expertise in creating responsive, performant web interfaces
+                using modern JavaScript frameworks.
+              </p>
+            </div>
+            <div className="absolute inset-0 -z-10">
+              <img
+                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-4.svg"
+                className="size-full object-cover"
+                alt="Relume placeholder image 4"
+              />
+              <div className="absolute inset-0 bg-neutral-darkest/50" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+"use client";
+
+import { Button } from "./ui/button";
+import React from "react";
+import { RxChevronRight } from "react-icons/rx";
+
+export function Layout442() {
+  return (
+    <section className="relative px-[5%] py-16 md:py-24 lg:py-28">
+      <div className="relative z-10 container">
+        <div className="grid grid-cols-1 gap-x-12 gap-y-5 md:grid-cols-2 lg:gap-x-20">
+          <div>
+            <p className="mb-3 font-semibold text-white md:mb-4">Ship</p>
+            <h2 className="heading-h2 font-bold text-white">
+              Mobile app development expertise
+            </h2>
+          </div>
+          <div className="mx-[7.5%] md:mt-48">
+            <p className="text-medium text-white">
+              Creating cross-platform mobile applications that deliver seamless
+              user experiences and robust performance.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
+              <Button title="View apps" variant="secondary-alt">
+                View apps
+              </Button>
+              <Button
+                title="Portfolio"
+                variant="link-alt"
+                size="link"
+                iconRight={<RxChevronRight />}
+              >
+                Portfolio
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+          className="size-full object-cover"
+          alt="Relume placeholder image"
+        />
+        <div className="absolute inset-0 bg-neutral-darkest/50" />
+      </div>
+    </section>
+  );
+}
+"use client";
+
+import { Button } from "./ui/button";
+import { useMediaQuery } from "../hooks/use-media-query";
+import { AnimatePresence, motion } from "framer-motion";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { RxChevronDown } from "react-icons/rx";
+
+const useRelume = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const isMobile = useMediaQuery("(max-width: 991px)");
+  const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
+  const openOnMobileDropdownMenu = () => {
+    setIsDropdownOpen((prev) => !prev);
+  };
+  const openOnDesktopDropdownMenu = () => {
+    !isMobile && setIsDropdownOpen(true);
+  };
+  const closeOnDesktopDropdownMenu = () => {
+    !isMobile && setIsDropdownOpen(false);
+  };
+  const animateMobileMenu = isMobileMenuOpen ? "open" : "close";
+  const animateMobileMenuButtonSpan = isMobileMenuOpen
+    ? ["open", "rotatePhase"]
+    : "closed";
+  const animateDropdownMenu = isDropdownOpen ? "open" : "close";
+  const animateDropdownMenuIcon = isDropdownOpen ? "rotated" : "initial";
+  return {
+    toggleMobileMenu,
+    openOnDesktopDropdownMenu,
+    closeOnDesktopDropdownMenu,
+    openOnMobileDropdownMenu,
+    animateMobileMenu,
+    animateMobileMenuButtonSpan,
+    animateDropdownMenu,
+    animateDropdownMenuIcon,
+  };
+};
+
+export function Navbar9() {
+  const useActive = useRelume();
+  return (
+    <section className="relative z-[999] flex min-h-16 w-full items-center border-b border-scheme-border bg-scheme-background px-[5%] md:min-h-18">
+      <div className="mx-auto flex size-full max-w-full items-center justify-between">
+        <Link to="/">
+          <img
+            src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
+            alt="Logo"
+          />
+        </Link>
+        <div className="absolute hidden h-screen overflow-auto border-b border-scheme-border bg-scheme-background px-[5%] pt-4 pb-24 md:pb-0 lg:static lg:ml-6 lg:flex lg:h-auto lg:flex-1 lg:items-center lg:justify-between lg:border-none lg:bg-none lg:px-0 lg:pt-0">
+          <div className="flex flex-col items-center lg:flex-row">
+            <Link
+              to="/projects"
+              className="text-regular relative block w-auto py-3 lg:inline-block lg:px-4 lg:py-6"
+            >
+              Projects
+            </Link>
+            <Link
+              to="/services"
+              className="text-regular relative block w-auto py-3 lg:inline-block lg:px-4 lg:py-6"
+            >
+              Skills
+            </Link>
+            <Link
+              to="/about"
+              className="text-regular relative block w-auto py-3 lg:inline-block lg:px-4 lg:py-6"
+            >
+              About
+            </Link>
+            <div
+              onMouseEnter={useActive.openOnDesktopDropdownMenu}
+              onMouseLeave={useActive.closeOnDesktopDropdownMenu}
+            >
+              <button
+                className="text-regular relative flex w-full items-center justify-between py-3 whitespace-nowrap lg:w-auto lg:justify-start lg:gap-2 lg:px-4 lg:py-6"
+                onClick={useActive.openOnMobileDropdownMenu}
+              >
+                <span>Contact</span>
+                <motion.span
+                  animate={useActive.animateDropdownMenuIcon}
+                  variants={{
+                    rotated: { rotate: 180 },
+                    initial: { rotate: 0 },
+                  }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <RxChevronDown />
+                </motion.span>
+              </button>
+              <AnimatePresence>
+                <motion.nav
+                  variants={{
+                    open: {
+                      opacity: 1,
+                      height: "var(--height-open, auto)",
+                      display: "block",
+                    },
+                    close: {
+                      opacity: 0,
+                      height: "var(--height-close, 0)",
+                      display: "none",
+                    },
+                  }}
+                  animate={useActive.animateDropdownMenu}
+                  initial="close"
+                  exit="close"
+                  transition={{ duration: 0.2 }}
+                  className="d top-full bottom-auto left-0 w-full max-w-full min-w-full overflow-hidden bg-scheme-background lg:absolute lg:w-screen lg:border-b lg:border-scheme-border lg:px-[5%] lg:[--height-close:auto]"
+                >
+                  <div className="mx-auto flex size-full max-w-full items-center justify-between">
+                    <div className="flex w-full flex-col lg:flex-row">
+                      <div className="grid flex-1 grid-cols-1 content-start items-start gap-x-8 gap-y-2 py-4 md:grid-cols-2 md:gap-y-6 md:py-8 lg:auto-cols-fr lg:grid-cols-4 lg:content-stretch lg:items-stretch lg:gap-y-0">
+                        <Link
+                          to="/"
+                          className="grid w-full auto-cols-fr grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
+                        >
+                          <div className="flex size-6 flex-col items-center justify-center">
+                            <img
+                              src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                              alt="Icon 1"
+                              className="shrink-0"
+                            />
+                          </div>
+                          <div className="flex flex-col items-start justify-center">
+                            <h5 className="font-semibold">Home</h5>
+                            <p className="text-small hidden md:block">
+                              Navigate through innovative digital solutions
+                            </p>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/projects"
+                          className="grid w-full auto-cols-fr grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
+                        >
+                          <div className="flex size-6 flex-col items-center justify-center">
+                            <img
+                              src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                              alt="Icon 1"
+                              className="shrink-0"
+                            />
+                          </div>
+                          <div className="flex flex-col items-start justify-center">
+                            <h5 className="font-semibold">Portfolio</h5>
+                            <p className="text-small hidden md:block">
+                              Explore cutting-edge software engineering projects
+                            </p>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/services"
+                          className="grid w-full auto-cols-fr grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
+                        >
+                          <div className="flex size-6 flex-col items-center justify-center">
+                            <img
+                              src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                              alt="Icon 1"
+                              className="shrink-0"
+                            />
+                          </div>
+                          <div className="flex flex-col items-start justify-center">
+                            <h5 className="font-semibold">Services</h5>
+                            <p className="text-small hidden md:block">
+                              Custom technology solutions for modern challenges
+                            </p>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/contact"
+                          className="grid w-full auto-cols-fr grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
+                        >
+                          <div className="flex size-6 flex-col items-center justify-center">
+                            <img
+                              src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                              alt="Icon 1"
+                              className="shrink-0"
+                            />
+                          </div>
+                          <div className="flex flex-col items-start justify-center">
+                            <h5 className="font-semibold">Contact</h5>
+                            <p className="text-small hidden md:block">
+                              Get in touch for collaboration opportunities
+                            </p>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative mb-6 flex w-full flex-col items-start justify-between p-6 sm:items-center lg:mb-0 lg:flex-row lg:px-0 lg:py-3">
+                    <div className="absolute top-0 -right-[50vw] bottom-0 -left-[50vw] w-[200vw] bg-scheme-foreground" />
+                    <div className="relative z-10 mr-auto flex flex-col gap-y-4 sm:mx-auto sm:grid sm:auto-cols-fr sm:grid-cols-[max-content_max-content] sm:gap-x-1">
+                      <p>Seeking tech opportunities</p>
+                      <Link to="/contact" className="underline">
+                        Connect with me
+                      </Link>
+                    </div>
+                  </div>
+                </motion.nav>
+              </AnimatePresence>
+            </div>
+          </div>
+          <div className="flex items-center gap-4">
+            <Button title="Hire" variant="secondary" size="sm">
+              Hire
+            </Button>
+            <Button title="Explore" size="sm">
+              Explore
+            </Button>
+          </div>
+        </div>
+        <button
+          className="-mr-2 flex size-12 cursor-pointer flex-col items-center justify-center lg:hidden"
+          onClick={useActive.toggleMobileMenu}
+        >
+          <motion.span
+            className="my-[3px] h-0.5 w-6 bg-neutral-darkest"
+            animate={useActive.animateMobileMenuButtonSpan}
+            variants={{
+              open: { translateY: 8, transition: { delay: 0.1 } },
+              rotatePhase: { rotate: -45, transition: { delay: 0.2 } },
+              closed: {
+                translateY: 0,
+                rotate: 0,
+                transition: { duration: 0.2 },
+              },
+            }}
+          />
+          <motion.span
+            className="my-[3px] h-0.5 w-6 bg-neutral-darkest"
+            animate={useActive.animateMobileMenu}
+            variants={{
+              open: { width: 0, transition: { duration: 0.1 } },
+              closed: {
+                width: "1.5rem",
+                transition: { delay: 0.3, duration: 0.2 },
+              },
+            }}
+          />
+          <motion.span
+            className="my-[3px] h-0.5 w-6 bg-neutral-darkest"
+            animate={useActive.animateMobileMenuButtonSpan}
+            variants={{
+              open: { translateY: -8, transition: { delay: 0.1 } },
+              rotatePhase: { rotate: 45, transition: { delay: 0.2 } },
+              closed: {
+                translateY: 0,
+                rotate: 0,
+                transition: { duration: 0.2 },
+              },
+            }}
+          />
+        </button>
+      </div>
+      <AnimatePresence>
+        <motion.div
+          variants={{ open: { height: "100dvh" }, close: { height: "auto" } }}
+          animate={useActive.animateMobileMenu}
+          initial="close"
+          exit="close"
+          className="absolute top-full right-0 left-0 w-full overflow-hidden lg:hidden"
+          transition={{ duration: 0.4 }}
+        >
+          <motion.div
+            variants={{ open: { y: 0 }, close: { y: "-100%" } }}
+            animate={useActive.animateMobileMenu}
+            initial="close"
+            exit="close"
+            transition={{ duration: 0.4 }}
+            className="absolute top-0 right-0 left-0 block h-dvh overflow-auto border-b border-scheme-border bg-scheme-background px-[5%] pt-4 pb-8"
+          >
+            <div className="flex flex-col">
+              <Link to="/" className="text-medium block py-3">
+                Home
+              </Link>
+              <Link to="/about" className="text-medium block py-3">
+                About
+              </Link>
+              <Link to="/projects" className="text-medium block py-3">
+                Projects
+              </Link>
+              <div>
+                <button
+                  className="text-regular relative flex w-full items-center justify-between py-3 whitespace-nowrap lg:w-auto lg:justify-start lg:gap-2 lg:px-4 lg:py-6"
+                  onClick={useActive.openOnMobileDropdownMenu}
+                >
+                  <span>Link Four</span>
+                  <motion.span
+                    animate={useActive.animateDropdownMenuIcon}
+                    variants={{
+                      rotated: { rotate: 180 },
+                      initial: { rotate: 0 },
+                    }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <RxChevronDown />
+                  </motion.span>
+                </button>
+                <AnimatePresence>
+                  <motion.nav
+                    variants={{
+                      open: {
+                        opacity: 1,
+                        height: "var(--height-open, auto)",
+                        display: "block",
+                      },
+                      close: {
+                        opacity: 0,
+                        height: "var(--height-close, 0)",
+                        display: "none",
+                      },
+                    }}
+                    animate={useActive.animateDropdownMenu}
+                    initial="close"
+                    exit="close"
+                    transition={{ duration: 0.2 }}
+                    className="top-full bottom-auto left-0 w-full max-w-full min-w-full overflow-hidden bg-scheme-background lg:absolute lg:w-screen lg:border-b lg:border-scheme-border lg:px-[5%] lg:[--height-close:auto]"
+                  >
+                    <div className="mx-auto flex size-full max-w-full items-center justify-between">
+                      <div className="flex w-full flex-col lg:flex-row">
+                        <div className="grid flex-1 grid-cols-1 content-start items-start gap-x-8 gap-y-2 py-4 md:grid-cols-2 md:gap-y-6 md:py-8 lg:auto-cols-fr lg:grid-cols-4 lg:content-stretch lg:items-stretch lg:gap-y-0">
+                          <Link
+                            to="/services"
+                            className="grid w-full auto-cols-fr grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
+                          >
+                            <div className="flex size-6 flex-col items-center justify-center">
+                              <img
+                                src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                                alt="Icon 1"
+                                className="shrink-0"
+                              />
+                            </div>
+                            <div className="flex flex-col items-start justify-center">
+                              <h5 className="font-semibold">Services</h5>
+                              <p className="text-small hidden md:block">
+                                Custom technology solutions for your needs
+                              </p>
+                            </div>
+                          </Link>
+                          <Link
+                            to="/contact"
+                            className="grid w-full auto-cols-fr grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
+                          >
+                            <div className="flex size-6 flex-col items-center justify-center">
+                              <img
+                                src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                                alt="Icon 2"
+                                className="shrink-0"
+                              />
+                            </div>
+                            <div className="flex flex-col items-start justify-center">
+                              <h5 className="font-semibold">Contact</h5>
+                              <p className="text-small hidden md:block">
+                                Get in touch for collaboration opportunities
+                              </p>
+                            </div>
+                          </Link>
+                          <Link
+                            to="/about"
+                            className="grid w-full auto-cols-fr grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
+                          >
+                            <div className="flex size-6 flex-col items-center justify-center">
+                              <img
+                                src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                                alt="Icon 3"
+                                className="shrink-0"
+                              />
+                            </div>
+                            <div className="flex flex-col items-start justify-center">
+                              <h5 className="font-semibold">About</h5>
+                              <p className="text-small hidden md:block">
+                                Learn more about my background and expertise
+                              </p>
+                            </div>
+                          </Link>
+                          <Link
+                            to="/projects"
+                            className="grid w-full auto-cols-fr grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
+                          >
+                            <div className="flex size-6 flex-col items-center justify-center">
+                              <img
+                                src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                                alt="Icon 4"
+                                className="shrink-0"
+                              />
+                            </div>
+                            <div className="flex flex-col items-start justify-center">
+                              <h5 className="font-semibold">Portfolio</h5>
+                              <p className="text-small hidden md:block">
+                                Explore my latest projects and work
+                              </p>
+                            </div>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="relative mb-6 flex w-full flex-col items-start justify-between p-6 sm:items-center lg:mb-0 lg:flex-row lg:px-0 lg:py-3">
+                      <div className="absolute top-0 -right-[50vw] bottom-0 -left-[50vw] w-[200vw] bg-scheme-foreground" />
+                      <div className="relative z-10 mr-auto flex flex-col gap-y-4 sm:mx-auto sm:grid sm:auto-cols-fr sm:grid-cols-[max-content_max-content] sm:gap-x-1">
+                        <p>Looking for a new career?</p>
+                        <Link to="/contact" className="underline">
+                          Get in touch
+                        </Link>
+                      </div>
+                    </div>
+                  </motion.nav>
+                </AnimatePresence>
+              </div>
+              <div className="mt-6 flex flex-col gap-4">
+                <Button title="Button" variant="secondary" size="sm">
+                  Button
+                </Button>
+                <Button title="Button" size="sm">
+                  Button
+                </Button>
+              </div>
+            </div>
+          </motion.div>
+        </motion.div>
+      </AnimatePresence>
+    </section>
+  );
+}
+"use client";
+
+import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
+import React from "react";
+import { RxChevronRight } from "react-icons/rx";
+
+export function Portfolio11() {
+  return (
+    <section className="px-[5%] py-16 md:py-24 lg:py-28">
+      <div className="container">
+        <div className="mx-auto mb-12 max-w-lg text-center md:mb-18 lg:mb-20">
+          <p className="mb-3 font-semibold md:mb-4">Work</p>
+          <h2 className="heading-h2 mb-5 font-bold md:mb-6">
+            Selected projects that define my journey
+          </h2>
+          <p className="text-medium">
+            A curated showcase of digital solutions that solve real-world
+            challenges.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 md:gap-y-16 lg:grid-cols-3">
+          <article>
+            <div className="mb-5 md:mb-6">
+              <a href="#">
+                <img
+                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+                  className="w-full rounded-image object-cover"
+                  alt="Relume placeholder image"
+                />
+              </a>
+            </div>
+            <h3 className="heading-h5 mb-2 font-bold">
+              <a href="#">E-commerce platform</a>
+            </h3>
+            <p>
+              Responsive web application integrating modern payment systems and
+              user-friendly design.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2 md:mt-4">
+              <Badge>
+                <a href="#">React</a>
+              </Badge>
+              <Badge>
+                <a href="#">TypeScript</a>
+              </Badge>
+              <Badge>
+                <a href="#">Supabase</a>
+              </Badge>
+            </div>
+            <Button
+              title="View project"
+              variant="link"
+              size="link"
+              iconRight={<RxChevronRight />}
+              asChild={true}
+              className="mt-5 md:mt-6"
+            >
+              <a href="#">View project</a>
+            </Button>
+          </article>
+          <article>
+            <div className="mb-5 md:mb-6">
+              <a href="#">
+                <img
+                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+                  className="w-full rounded-image object-cover"
+                  alt="Relume placeholder image"
+                />
+              </a>
+            </div>
+            <h3 className="heading-h5 mb-2 font-bold">
+              <a href="#">Data visualization tool</a>
+            </h3>
+            <p>
+              Interactive dashboard transforming complex data into clear,
+              actionable insights.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2 md:mt-4">
+              <Badge>
+                <a href="#">D3.js</a>
+              </Badge>
+              <Badge>
+                <a href="#">React</a>
+              </Badge>
+              <Badge>
+                <a href="#">Three.js</a>
+              </Badge>
+            </div>
+            <Button
+              title="View project"
+              variant="link"
+              size="link"
+              iconRight={<RxChevronRight />}
+              asChild={true}
+              className="mt-5 md:mt-6"
+            >
+              <a href="#">View project</a>
+            </Button>
+          </article>
+          <article>
+            <div className="mb-5 md:mb-6">
+              <a href="#">
+                <img
+                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+                  className="w-full rounded-image object-cover"
+                  alt="Relume placeholder image"
+                />
+              </a>
+            </div>
+            <h3 className="heading-h5 mb-2 font-bold">
+              <a href="#">Mobile game prototype</a>
+            </h3>
+            <p>
+              Innovative mobile game exploring unique interaction design and
+              immersive gameplay mechanics.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2 md:mt-4">
+              <Badge>
+                <a href="#">Unity</a>
+              </Badge>
+              <Badge>
+                <a href="#">C#</a>
+              </Badge>
+              <Badge>
+                <a href="#">Game design</a>
+              </Badge>
+            </div>
+            <Button
+              title="View project"
+              variant="link"
+              size="link"
+              iconRight={<RxChevronRight />}
+              asChild={true}
+              className="mt-5 md:mt-6"
+            >
+              <a href="#">View project</a>
+            </Button>
+          </article>
+        </div>
+        <div className="mt-12 flex justify-center md:mt-18 lg:mt-20">
+          <Button title="View all projects" variant="secondary">
+            View all projects
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
+"use client";
+
+import { Badge } from "./ui/badge";
+import React from "react";
+
+export function PortfolioHeader12() {
+  return (
+    <section className="relative px-[5%]">
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+          alt="Relume placeholder image 1"
+          className="size-full object-cover"
+        />
+        <span className="absolute inset-0 z-10 bg-neutral-darkest/50" />
+      </div>
+      <div className="relative z-10 flex min-h-svh items-end justify-center">
+        <div className="container">
+          <div className="grid grid-cols-1 items-start gap-6 py-16 md:grid-cols-2 md:gap-x-12 md:py-24 lg:gap-20 lg:py-28">
+            <div>
+              <h1 className="heading-h1 mb-5 font-bold text-white md:mb-6">
+                Digital portfolio project
+              </h1>
+              <div className="mt-5 flex flex-wrap gap-2 md:mt-6">
+                <Badge>
+                  <a href="#">Web design</a>
+                </Badge>
+                <Badge>
+                  <a href="#">Frontend dev</a>
+                </Badge>
+                <Badge>
+                  <a href="#">UI/UX</a>
+                </Badge>
+              </div>
+            </div>
+            <div>
+              <p className="text-medium text-white">
+                A comprehensive digital showcase highlighting technical skills
+                and creative problem-solving through innovative web development
+                techniques.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+"use client";
+
+import { Button } from "./ui/button";
+import { Card } from "./ui/card";
+import React from "react";
+import { BiCheck } from "react-icons/bi";
+
+export function Pricing18() {
+  return (
+    <section className="px-[5%] py-16 md:py-24 lg:py-28">
+      <div className="container">
+        <div className="mx-auto mb-12 max-w-lg text-center md:mb-18 lg:mb-20">
+          <p className="mb-3 font-semibold md:mb-4">Build</p>
+          <h2 className="heading-h2 mb-5 font-bold md:mb-6">
+            Flexible pricing
+          </h2>
+          <p className="text-medium">
+            Scalable solutions designed to meet your unique business
+            requirements.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <Card className="flex h-full flex-col justify-between px-6 py-8 md:p-8">
+            <div>
+              <div className="mb-6 text-center md:mb-8">
+                <h6 className="heading-h6 font-bold">Starter</h6>
+                <h1 className="heading-h1 my-2 font-bold">$1500</h1>
+                <p>One-time project fee</p>
+              </div>
+              <div className="mb-8 grid grid-cols-1 gap-4 py-2">
+                <div className="flex self-start">
+                  <div className="mr-4 flex-none self-start">
+                    <BiCheck className="size-6" />
+                  </div>
+                  <p>Basic website development</p>
+                </div>
+                <div className="flex self-start">
+                  <div className="mr-4 flex-none self-start">
+                    <BiCheck className="size-6" />
+                  </div>
+                  <p>Responsive design</p>
+                </div>
+                <div className="flex self-start">
+                  <div className="mr-4 flex-none self-start">
+                    <BiCheck className="size-6" />
+                  </div>
+                  <p>Standard SEO optimization</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <Button title="Get started" className="w-full">
+                Get started
+              </Button>
+            </div>
+          </Card>
+          <Card className="flex h-full flex-col justify-between px-6 py-8 md:p-8">
+            <div>
+              <div className="mb-6 text-center md:mb-8">
+                <h6 className="heading-h6 font-bold">Professional</h6>
+                <h1 className="heading-h1 my-2 font-bold">$3000</h1>
+                <p>Comprehensive project package</p>
+              </div>
+              <div className="mb-8 grid grid-cols-1 gap-4 py-2">
+                <div className="flex self-start">
+                  <div className="mr-4 flex-none self-start">
+                    <BiCheck className="size-6" />
+                  </div>
+                  <p>Custom web application</p>
+                </div>
+                <div className="flex self-start">
+                  <div className="mr-4 flex-none self-start">
+                    <BiCheck className="size-6" />
+                  </div>
+                  <p>Advanced performance optimization</p>
+                </div>
+                <div className="flex self-start">
+                  <div className="mr-4 flex-none self-start">
+                    <BiCheck className="size-6" />
+                  </div>
+                  <p>Integrated CMS</p>
+                </div>
+                <div className="flex self-start">
+                  <div className="mr-4 flex-none self-start">
+                    <BiCheck className="size-6" />
+                  </div>
+                  <p>Ongoing support</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <Button title="Get started" className="w-full">
+                Get started
+              </Button>
+            </div>
+          </Card>
+          <Card className="flex h-full flex-col justify-between px-6 py-8 md:p-8">
+            <div>
+              <div className="mb-6 text-center md:mb-8">
+                <h6 className="heading-h6 font-bold">Enterprise</h6>
+                <h1 className="heading-h1 my-2 font-bold">$5000</h1>
+                <p>Full digital transformation</p>
+              </div>
+              <div className="mb-8 grid grid-cols-1 gap-4 py-2">
+                <div className="flex self-start">
+                  <div className="mr-4 flex-none self-start">
+                    <BiCheck className="size-6" />
+                  </div>
+                  <p>Complex web ecosystem</p>
+                </div>
+                <div className="flex self-start">
+                  <div className="mr-4 flex-none self-start">
+                    <BiCheck className="size-6" />
+                  </div>
+                  <p>Advanced security protocols</p>
+                </div>
+                <div className="flex self-start">
+                  <div className="mr-4 flex-none self-start">
+                    <BiCheck className="size-6" />
+                  </div>
+                  <p>Custom API integrations</p>
+                </div>
+                <div className="flex self-start">
+                  <div className="mr-4 flex-none self-start">
+                    <BiCheck className="size-6" />
+                  </div>
+                  <p>Dedicated support team</p>
+                </div>
+                <div className="flex self-start">
+                  <div className="mr-4 flex-none self-start">
+                    <BiCheck className="size-6" />
+                  </div>
+                  <p>Unlimited revisions</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <Button title="Get started" className="w-full">
+                Get started
+              </Button>
+            </div>
+          </Card>
+        </div>
+      </div>
+    </section>
+  );
+}
+"use client";
+
+import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog";
+import { VideoIframe } from "./ui/video-iframe";
+import React from "react";
+import { BiSolidStar } from "react-icons/bi";
+import { FaCirclePlay } from "react-icons/fa6";
+
+export function Testimonial14() {
+  return (
+    <section className="px-[5%] py-16 md:py-24 lg:py-28">
+      <div className="container">
+        <div className="grid w-full auto-cols-fr grid-cols-1 items-center justify-center gap-12 md:grid-cols-2 md:gap-10 lg:gap-x-20">
+          <div className="order-last md:order-first">
+            <Dialog>
+              <DialogTrigger className="relative flex w-full items-center justify-center overflow-hidden rounded-image">
+                <img
+                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-video-thumbnail.svg"
+                  alt="Relume placeholder image"
+                  className="size-full object-cover"
+                />
+                <span className="absolute inset-0 z-10 bg-neutral-darkest/50" />
+                <FaCirclePlay className="absolute z-20 size-16 text-white" />
+              </DialogTrigger>
+              <DialogContent>
+                <VideoIframe video="https://www.youtube.com/embed/8DKLYsikxTs?si=Ch9W0KrDWWUiCMMW" />
+              </DialogContent>
+            </Dialog>
+          </div>
+          <div className="flex flex-col items-start">
+            <div className="mb-6 flex md:mb-8">
+              <BiSolidStar className="size-6" />
+              <BiSolidStar className="size-6" />
+              <BiSolidStar className="size-6" />
+              <BiSolidStar className="size-6" />
+              <BiSolidStar className="size-6" />
+            </div>
+            <blockquote className="heading-h5 font-bold">
+              "Milyon's work transformed our digital strategy with incredible
+              precision and creativity."
+            </blockquote>
+            <div className="mt-6 flex flex-nowrap items-center gap-5 md:mt-8">
+              <div>
+                <p className="font-semibold">Sarah Thompson</p>
+                <p>CTO, Tech Innovations</p>
+              </div>
+              <div className="mx-4 w-px self-stretch bg-scheme-border sm:mx-0" />
+              <div>
+                <img
+                  src="https://d22po4pjz3o32e.cloudfront.net/webflow-logo.svg"
+                  alt="Webflow logo 1"
+                  className="max-h-12"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
